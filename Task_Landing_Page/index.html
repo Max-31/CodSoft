@@ -8,39 +8,40 @@
 </head>
 <body>
     
-    <div class="entire">
+    <!-- <div class="entire"> -->
+        <nav>
+            <div class="left">
+                <img class="logo" src="logo.png" alt="logo">
+
+                <h2 class="navHeading">DIGITARTH</h2>
+            </div>
+
+            <div class="menu">
+                <div class="navMenu">
+                    <a href="#">
+                        HOME
+                    </a>
+                </div>
+                <div class="navMenu">
+                    <a href="#cardTextId">
+                    <!-- <a href="#aboutUsId"> -->
+                        ABOUT US
+                    </a>
+                </div>
+                <div class="navMenu">
+                    <a href="#buttonId">
+                    <!-- <a href="#ourServicesId"> -->
+                        SERVICES
+                    </a>
+                </div>
+                <div class="navMenu">
+                    <a href="#footerId">
+                        CONTACT US
+                    </a>
+                </div>
+            </div>
+        </nav>
         <header class="headerClass" id="headerId">
-            <nav>
-                <div class="left">
-                    <img class="logo" src="logo.png" alt="logo">
-
-                    <h2 class="navHeading">DIGITARTH</h2>
-                </div>
-
-                <div class="menu">
-                    <div class="navMenu">
-                        <a href="#headerId">
-                            HOME
-                        </a>
-                    </div>
-                    <div class="navMenu">
-                        <a href="#aboutUsId">
-                            ABOUT US
-                        </a>
-                    </div>
-                    <div class="navMenu">
-                        <a href="#ourServicesId">
-                            SERVICES
-                        </a>
-                    </div>
-                    <div class="navMenu">
-                        <a href="#footerId">
-                            CONTACT US
-                        </a>
-                    </div>
-                </div>
-            </nav>
-
         
             <div class="headerText" id="headerImageId">
                 <h5 class="h4Header" id="homeId">Innovative Solutions for the Future World</h4>
@@ -99,13 +100,13 @@
                     </div>
                 </div>
 
-                <div class="cardText">
+                <div class="cardText" id="cardTextId">
                     Optimize your time with tools and techniques for success.
                 </div>
             </div>
 
         </div>
-
+    <!-- </div> -->
         <div class="aboutUs" id="aboutUsId">
             <div class="text">
                 <h3 class="h3AboutUs">ABOUT US</h3>
@@ -119,7 +120,7 @@
                 </p>
                 
                 <button class="buttonReadMore">
-                    <p>READ MORE</p>
+                    <p id="buttonId">READ MORE</p>
                     <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                 </button>
             </div>
@@ -210,18 +211,19 @@
                     </a>
                 </div>
             </div>
+            <hr>
             <div class="footerBottom">
-                <p>Copyright ©2021 <a href="#headerId">Digitarth</a></p>
+                <p>Copyright ©2024 <a href="#">Digitarth</a></p>
                 <ul>
-                  <li><a href="#headerId">Home</a></li>
-                  <li><a href="#aboutUsId">About</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="#ourServicesId">Services</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#cardTextId">About</a></li>
+                  <!-- <li><a href="#aboutUsId">About</a></li> -->
+                  <li><a href="#footerId">Contact</a></li>
+                  <li><a href="#buttonId">Services</a></li>
+                  <!-- <li><a href="#ourServicesId">Services</a></li> -->
                 </ul>
             </div>
         </footer>
-
-    </div>
 
 
 
