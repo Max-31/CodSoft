@@ -241,7 +241,7 @@ header {
   border-width: 0;
   border-color: none; */
 
-  background: var(--textColor);
+  background: transparent;
   color: var(--textColorDark);
   border-radius: 15px;
   border-width: 2px;
