@@ -1,22 +1,16 @@
 :root {
-  --myColor: linear-gradient(
-    120deg,
-    rgba(32, 39, 46, 1) 0%,
-    rgba(98, 91, 83, 1) 94%,
-    rgba(212, 213, 215, 1) 100%
-  );
-  --textGrad: linear-gradient(
-    120deg,
-    rgba(212, 213, 215, 1) 0%,
-    rgba(98, 91, 83, 1) 30%,
-    rgba(32, 39, 46, 1) 100%
-  );
-  --buttonGrad: linear-gradient(
-    120deg,
-    rgba(212, 213, 215, 1) 0%,
-    rgba(98, 91, 83, 1) 6%,
-    rgba(32, 39, 46, 1) 100%
-  );
+  --myColor: linear-gradient(120deg,
+      rgba(32, 39, 46, 1) 0%,
+      rgba(98, 91, 83, 1) 94%,
+      rgba(212, 213, 215, 1) 100%);
+  --textGrad: linear-gradient(120deg,
+      rgba(212, 213, 215, 1) 0%,
+      rgba(98, 91, 83, 1) 30%,
+      rgba(32, 39, 46, 1) 100%);
+  --buttonGrad: linear-gradient(120deg,
+      rgba(212, 213, 215, 1) 0%,
+      rgba(98, 91, 83, 1) 6%,
+      rgba(32, 39, 46, 1) 100%);
   --textColor: white;
   --textColorDark: rgba(32, 39, 46, 1);
 }
@@ -32,11 +26,12 @@ html {
   box-sizing: border-box;
 }
 
-nav {
+.nav {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  /* background: var(--myColor); */
+  /* background: #d7cece; */
   backdrop-filter: blur(50px);
   border-bottom: 0.1px solid var(--textColor);
   color: var(--textColor);
@@ -44,52 +39,63 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* same as bring above */
 }
 
-nav .left {
+.left {
+  width: 30%;
   padding-left: 5%;
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
-nav .logo {
+.logo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: white;
 }
 
-nav .navHeading {
+.navHeading {
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 1px;
   color: var(--textGrad);
 }
 
-nav .menu {
+.menu {
+  width: 50%;
+  list-style: none;
   display: flex;
-  margin-right: 8%;
-  color: var(--textColor);
-  padding: 1.2%;
-}
-
-.navMenu{
-  width: fit-content;
   justify-content: space-evenly;
-  margin-right: 20%;
+  /* gap: 40px; */
+  padding-right: 4%;
+  color: var(--textColor);
 }
 
-nav .menu .navMenu a {
+.navMenu {
+  transition: font-weight 0.3s ease, transform 0.3s ease;
+  /* display: inline-block; */
+}
+
+.navMenu a {
+  transition: all 0.3s ease;
   text-decoration: none;
-  color: white;
+  color: var(--textColor);
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
   font-size: 1rem;
   font-weight: 500;
 }
 
-nav .menu .navMenu a:hover {
-  font-weight: 700;
-  transition: all 0.3s ease-in-out;
+.navMenu :hover {
+  /* font-weight: 550;  */
+  /* eta korbona */
+  transform: scale(1.10);
+  /*eta recommended*/
 }
 
 header {
@@ -143,15 +149,14 @@ header {
   border-width: 0;
   border-color: none;
   padding: 1.5%;
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .headerClass button:hover {
-  background: var(--textColor);
-  color: var(--textColorDark);
+  /* background: var(--textColor);
+  color: var(--textColorDark); */
+  background: var(--myColor);
   cursor: pointer;
-
-  /* background: var(--myColor); */
 }
 
 .underHeader {
@@ -236,12 +241,12 @@ header {
   margin-bottom: 2%;
 }
 
-.text p{
+.text p {
   font-size: 1.2rem;
   line-height: 30px;
 }
 
-.text button{
+.text button {
   /* background: var(--buttonGrad);
   color: var(--textColor);
   border-radius: 15px;
@@ -259,16 +264,16 @@ header {
   padding: 2.5%;
   display: flex;
   justify-content: space-evenly;
-  align-items:center;
+  align-items: center;
   transition: all 0.5s ease-in-out;
 }
 
-.text ion-icon{
+.text ion-icon {
   margin-left: 7px;
   font-size: 2rem;
 }
 
-.text button:hover{
+.text button:hover {
   /* background: var(--myColor); */
 
   background: var(--buttonGrad);
@@ -276,11 +281,11 @@ header {
   cursor: pointer;
 }
 
-.image{
+.image {
   align-content: center;
 }
 
-.ourServices{
+.ourServices {
   padding: 3%;
   background: var(--myColor);
   width: 100%;
@@ -288,16 +293,16 @@ header {
   overflow: visible;
 }
 
-.serviceText{
+.serviceText {
   margin-left: 14%;
 }
 
-.ourServices h3{
+.ourServices h3 {
   font-size: 2rem;
   color: var(--textColor);
 }
 
-.ourServices hr{
+.ourServices hr {
   border: 0;
   width: 23%;
   height: 3px;
@@ -306,35 +311,35 @@ header {
   margin-bottom: 3%;
 }
 
-.ourServiceCards{
+.ourServiceCards {
   display: flex;
   justify-content: space-evenly;
 }
 
-.serviceCard{
+.serviceCard {
   margin: 2%;
 }
 
-.serviceCardImage{
+.serviceCardImage {
   border-radius: 30px;
   border: 2px solid var(--textColor);
 }
 
-.serviceCardText{
+.serviceCardText {
   display: flex;
   padding: 2%;
   justify-content: left;
 }
 
-.serviceCardText ion-icon{
+.serviceCardText ion-icon {
   font-size: 1.7rem;
 }
 
-.serviceCardText p{
+.serviceCardText p {
   font-size: 1.2rem;
 }
 
-.serviceIcon{
+.serviceIcon {
   color: var(--textColor);
   width: 50px;
   height: 50px;
@@ -345,7 +350,7 @@ header {
   background: var(--buttonGrad);
 }
 
-.servicetext{
+.servicetext {
   margin-left: 2%;
   padding: 6%;
   background: var(--textColor);
@@ -356,21 +361,21 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
-.servicetext:hover{
+.servicetext:hover {
   background: var(--buttonGrad);
   color: var(--textColor);
-  cursor:default;
+  cursor: default;
 }
 
 footer {
   background-color: #000;
-  color: #fff; 
+  color: #fff;
   text-align: center;
   padding: 20px 0;
   font-family: Arial, sans-serif;
 }
 
-footer hr{
+footer hr {
   margin-top: 1.5%;
   margin-bottom: 1.5%;
 }
@@ -388,7 +393,7 @@ footer hr{
   margin-right: auto;
 }
 
-.socialIcons{
+.socialIcons {
   justify-content: space-evenly;
 }
 
@@ -403,7 +408,7 @@ footer hr{
 }
 
 .socialIcons a:hover {
-  font-size: 1.7rem;
+  transform: scale(1.4);
 }
 
 .footerBottom p {
