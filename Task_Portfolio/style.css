@@ -41,7 +41,7 @@
 }
 
 .menu a {
-    color: var(--textColor);
+    color: var(--textColor3);
     text-decoration: none;
     width: 100%;
     margin-right: 3%;
@@ -49,7 +49,8 @@
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    color: var(--textColor);
 }
 
 .mainDiv {
@@ -71,6 +72,7 @@
 .introText {
     font-size: 1rem;
     padding-bottom: 3%;
+    color: var(--textColor3);
 }
 
 .introText dd {
