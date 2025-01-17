@@ -1,0 +1,565 @@
+:root {
+    --textColor: black;
+    /* --textColor2: grey; */
+    --textColor2: darkgrey;
+    --textColor3: grey;
+    --buttonColor: rgb(22, 22, 150);
+    --buttonText: white;
+    --buttonHover: rgb(111, 111, 225);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.navSec {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 1%;
+}
+
+.sign {
+    margin-left: 4%;
+}
+
+.sign img {
+    width: 150px;
+    height: 50px;
+}
+
+.menu {
+    display: inline-block;
+    padding: 1.5%;
+    width: 50%;
+}
+
+.menu a {
+    color: var(--textColor);
+    text-decoration: none;
+    width: 100%;
+    margin-right: 3%;
+    font-size: 1rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    padding-top: 6%;
+}
+
+.Text {
+    width: 40%;
+}
+
+.headingText {
+    font-size: 2.4rem;
+    margin-bottom: 5%;
+}
+
+.introText {
+    font-size: 1rem;
+    padding-bottom: 3%;
+}
+
+.introText dd {
+    display: list-item;
+    list-style-type: "⚡";
+    padding-inline-start: 1ch;
+}
+
+.heroButtons {
+    display: flex;
+    justify-content: left;
+}
+
+.heroButtons button {
+    padding: 2%;
+    margin-right: 10%;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1.1rem;
+    align-items: center;
+    background: var(--buttonColor);
+    color: var(--buttonText);
+}
+
+.heroButtons button:hover {
+    cursor: pointer;
+    background: var(--buttonHover);
+}
+
+.downloadResume {
+    display: flex;
+}
+
+.downloadResume p {
+    margin-right: 10px;
+}
+
+.downloadResume ion-icon {
+    font-size: 1.5rem;
+}
+
+.sideImage {
+    align-content: center;
+}
+
+.mainDiv img {
+    width: max-content;
+    height: 100%;
+}
+
+.linkedin {
+    color: #0874b4;
+}
+
+.facebook {
+    color: #0864fc;
+}
+
+.profiles ion-icon {
+    margin-bottom: 5%;
+    font-size: 2.3rem;
+    margin-right: 3%;
+}
+
+.profiles ion-icon:hover {
+    cursor: pointer;
+}
+
+#html {
+    color: #E54C21;
+}
+
+#css {
+    color: #264DE4;
+}
+
+#js {
+    color: #F0DB4F;
+}
+
+#react {
+    color: #00DAFD;
+}
+
+#nodejs {
+    color: #529F41;
+}
+
+#skillsImage img {
+    width: 350px;
+    height: 350px;
+}
+
+#proficiency img {
+    width: 450px;
+    height: 450px;
+}
+
+#proficiency {
+    /* background: #0874b4; */
+    width: 35%;
+}
+
+.progressBar {
+    display: block;
+    padding: 2%;
+}
+
+.progressBar label {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.labelDiv {
+    padding: 2%;
+    padding-bottom: 3%;
+}
+
+.progressBar progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: #366CC7;
+}
+
+progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: rgb(230, 219, 219);
+}
+
+.openSourceProject .headingText {
+    margin-top: 7%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.openSourceProject {
+    margin-left: 7%;
+    margin-bottom: 2%;
+    margin-right: 7%;
+}
+
+.allCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cardParent {
+    border: black;
+    border-width: 3px;
+    border-radius: 10px;
+    /* background: skyblue; */
+    overflow: visible;
+
+    padding: 2%;
+    margin: 3%;
+    box-shadow: 3px 3px 5px 3px var(--textColor2);
+}
+
+.cardParent:hover {
+    box-shadow: 3px 3px 5px 5px var(--textColor2);
+}
+
+.cardHead,
+.cardStats,
+.leftStat,
+.statText span {
+    display: flex;
+}
+
+.cardHead {
+    align-items: center;
+    padding: 2%;
+}
+
+.cardHead ion-icon {
+    font-size: 1.5rem;
+    margin-right: 3%;
+}
+
+.cardHead h4 {
+    font-size: 1.4rem;
+}
+
+.cardDes,
+.statIcon2,
+.statIcon3 {
+    padding: 2%;
+    color: var(--textColor2);
+}
+
+.cardStats {
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.statText p,
+.rightStat p {
+    color: var(--textColor3);
+}
+
+.statText {
+    padding: 1%;
+}
+
+.statIcon1 {
+    color: #F0DB4F;
+}
+
+.openSourceProject button {
+    cursor: pointer;
+    padding: 1.2%;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1.1rem;
+    align-items: center;
+    background: var(--buttonColor);
+    color: var(--buttonText);
+}
+
+.openSourceProject button:hover {
+    background: var(--buttonHover);
+}
+
+.openSourceButton {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin: 1.5%;
+}
+
+.bigProjects {
+    justify-content: left;
+    margin-left: 7%;
+    margin-bottom: 7%;
+}
+
+.bigProjects .headingText {
+    margin-top: 7%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+}
+
+.projectImage {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .achievement{
+    margin-left: 7%;
+} */
+.achievement .headingText {
+    margin-bottom: 0%;
+    margin-left: 9%;
+}
+
+.achievement {
+    margin-bottom: 7%;
+}
+
+.achivDes {
+    padding-top: 0.5%;
+    padding-bottom: 3%;
+    margin-left: 9%;
+    color: var(--textColor2);
+}
+
+.certs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.certCard {
+    border: black;
+    border-width: 3px;
+    border-radius: 10px;
+    /* background: skyblue; */
+    overflow: visible;
+
+    padding: 3%;
+    margin: 3%;
+    box-shadow: 3px 3px 5px 3px var(--textColor2);
+
+    text-align: center;
+}
+
+.certCard:hover {
+    box-shadow: 3px 3px 5px 5px var(--textColor2);
+}
+
+.certHead {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    padding: 5%;
+}
+
+.certDesc {
+    color: var(--textColor2);
+}
+
+.certFoot {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+
+.certFoot a {
+    text-decoration: none;
+}
+
+.certFoot p {
+    color: var(--textColor3);
+}
+
+.blog {
+    margin-bottom: 7%;
+}
+
+.blog .headingText {
+    margin-bottom: 0%;
+    margin-left: 9%;
+}
+
+.blog .allCard {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.blog .cardHead a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.talks {
+    margin-bottom: 7%;
+}
+
+.talks .headingText {
+    margin-bottom: 0%;
+    margin-left: 9%;
+}
+
+.talks .certs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talks .certCard {
+    padding: 2%;
+}
+
+.talks .certDesc {
+    padding-top: 3%;
+    font-size: 1.5rem;
+}
+
+.talks .certFoot button {
+    cursor: pointer;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1.2rem;
+    align-items: center;
+    background: var(--buttonColor);
+    color: var(--buttonText);
+}
+
+.talks .certFoot button:hover {
+    background: var(--buttonHover);
+}
+
+#pod_icon {
+    font-size: 2rem;
+}
+
+#pod_des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .achivDes {
+    margin-bottom: 0%;
+}
+
+#about {
+    display: flex;
+}
+
+#about .aboutLeft {
+    width: 74%;
+}
+
+.aboutRight {
+    box-shadow: 3px 3px 5px 3px var(--textColor2);
+    border-radius: 50%;
+}
+
+.aboutContain {
+    margin-top: 0%;
+    margin-left: 7%;
+}
+
+.aboutContain .cardHead {
+    margin: 0%;
+}
+
+#aboutHead h4 {
+    font-size: 1.5rem;
+    justify-content: left;
+}
+
+.aboutText {
+    margin: 2%;
+}
+
+.aboutText h6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    justify-content: left;
+}
+
+.gitlab {
+    color: #E54C21;
+}
+
+.aboutIcon {
+    font-size: 2rem;
+    margin-right: 1.4%;
+    cursor: pointer;
+}
+
+.aboutProf {
+    margin-left: 2%;
+}
+
+footer {
+    background-color: var(--textColor);
+    color: var(--buttonText);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--buttonText);
+}
+
+footer a:hover {
+    color: var(--textColor3);
+}
+
+/* ______________________________________________________ */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--buttonColor);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(203, 202, 239);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--buttonHover);
+}

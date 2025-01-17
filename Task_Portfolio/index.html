@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="hero">
+
+        <div class="navSec">
+                <div class="sign">
+                    <a href="#">
+                        <img src="Signature.png" alt="">
+                    </a>
+                </div>
+
+                <div class="menu">
+                    <a href="#skillsId" class="subMenu">Skills</a>
+                    <a href="#openSourceId" class="subMenu">Open Source</a>
+                    <a href="#projectId" class="subMenu">Projects</a>
+                    <a href="#AchId" class="subMenu">Achievements</a>
+                    <a href="#blogId" class="subMenu">Blogs</a>
+                    <a href="#talkId" class="subMenu">Talks</a>
+                    <a href="#about" class="subMenu">Contact Me</a>
+                </div>   
+        </div>
+
+        <div class="mainDiv">
+            <div class="Text">
+                <div class="headingText">
+                    <h2>Hi I'm Rajarshi👋🏼</h2>
+                </div>
+                <div class="introText">
+                    <p>
+                        I'm a passionate Software Developer, Competitive Programmer, and proud ICPC Regionalist 2023 with a knack for solving complex problems and building innovative solutions. 
+                        With a strong foundation in computer science and hands-on experience in open-source contributions, I thrive in challenging environments. 
+                        Currently honing my skills in JavaScript, Web Development, and Data Structures & Algorithms.    
+                    </p>
+                </div>
+                <div class="profiles">
+                    <!-- icons github, codechef, leetcode, gfg-->
+                    <ion-icon class="github" name="logo-github"></ion-icon>
+                    <ion-icon class="linkedin" name="logo-linkedin"></ion-icon>
+                    <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+                </div>
+                <div class="heroButtons">
+                    <button class="downloadResume">
+                        <p>CONTACT ME</p>
+                        <div>
+                            <ion-icon name="open-outline"></ion-icon>
+                        </div>
+                    </button>
+                    
+                    <button class="downloadResume">
+                        <p>DOWNLOAD RESUME</p>
+                        <div>
+                            <ion-icon name="download-outline"></ion-icon>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sideImage">
+                <img src="heroImg.png" alt="heroImage">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- what i do -->
+    <div class="mainDiv" id="skillsId">
+        <div class="sideImage" id="skillsImage">
+            <img src="skills.png" alt="">
+        </div>
+        <div class="Text">
+            <div class="headingText">
+                <h3>What I Do</h3>
+            </div>
+            <div class="profiles">
+                <!-- icons of skills -->
+                <ion-icon id="html" name="logo-html5"></ion-icon>
+                <ion-icon id="css" name="logo-css3"></ion-icon>
+                <ion-icon id="js" name="logo-javascript"></ion-icon>
+                <ion-icon id="react" name="logo-react"></ion-icon>
+                <ion-icon id="nodejs" name="logo-nodejs"></ion-icon>
+                
+            </div>
+            <div class="introText">
+                <dl>
+                    <dd>Proficient in creating well-structured and semantic web pages using HTML, ensuring accessibility and cross-browser compatibility.</dd>
+                    <dd>Skilled in designing visually appealing and responsive layouts with CSS, including expertise in animations, transitions, and advanced styling techniques.</dd>
+                    <dd>Adept at writing clean, efficient, and modular JavaScript code to implement dynamic functionality and interactive user experiences on the web.</dd>
+                    <dd>Experienced in utilizing TailwindCSS to quickly develop modern, responsive, and customizable web designs with a utility-first approach.</dd>
+                    <dd>Proficient in building scalable server-side applications using Node.js, including API development and integration with databases.</dd>
+                    <dd>Skilled in developing fast and interactive user interfaces with React.js, leveraging its component-based architecture and state management capabilities.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- proficiency -->
+    <div class="mainDiv">
+        <div class="Text" id="profText">
+            <div class="headingText">
+                <h3>Proficiency</h3>
+            </div>
+
+            <div class="progressBar">
+                <div class="labelDiv"><label class="progHeading" for="progress">DSA</label></div>
+                <progress class="progBar" id="progress" value="70" max="100"></progress>
+            </div>
+
+            <div class="progressBar">
+                <div class="labelDiv"><label class="progHeading" for="progress">Problem Solving</label></div>
+                <progress class="progBar" id="progress" value="70" max="100"></progress>
+            </div>
+
+            <div class="progressBar">
+                <div class="labelDiv"><label class="progHeading" for="progress">FrontEnd</label></div>
+                <progress class="progBar" id="progress" value="60" max="100"></progress>
+            </div>
+
+            <div class="progressBar">
+                <div class="labelDiv"><label class="progHeading" for="progress">BackEnd</label></div>
+                <progress class="progBar" id="progress" value="40" max="100"></progress>
+            </div>
+
+            <div class="progressBar">
+                <div class="labelDiv"><label class="progHeading" for="progress">Databases</label></div>
+                <progress class="progBar" id="progress" value="20" max="100"></progress>
+            </div>
+        </div>
+
+        <div class="sideImage" id="proficiency">
+            <img src="proficiency.png" alt="">
+        </div>
+    </div>
+
+    <!-- openSourceProject -->
+    <div class="openSourceProject" id="openSourceId">
+        <div class="headingText">
+            <h3>Open Source Projects</h3>
+        </div>
+        <div class="allCard">
+            <!-- 4 cards -->
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <h4>react-blog-github</h4>
+                </div>
+                <div class="cardDes">
+                    <p>React + Github Issues👉 Your Personal Blog 🔥</p>
+                </div>
+                <div class="cardStats">
+                    <div class="leftStat">
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon1" name="radio-button-on"></ion-icon>
+                                <p>Javascript</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon2" name="git-network-outline"></ion-icon>
+                                <p>46</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon3" name="star"></ion-icon>
+                                <p>485</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rightStat">
+                        <p>16464 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <h4>Grocery-Items-Detection</h4>
+                </div>
+                <div class="cardDes">
+                    <p>Grocery Items🥦 Detection using Tensorflow.js and IBM Watson</p>
+                </div>
+                <div class="cardStats">
+                    <div class="leftStat">
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon1" name="radio-button-on"></ion-icon>
+                                <p>Javascript</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon2" name="git-network-outline"></ion-icon>
+                                <p>53</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon3" name="star"></ion-icon>
+                                <p>25</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rightStat">
+                        <p>16004 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <h4>developerFolio</h4>
+                </div>
+                <div class="cardDes">
+                    <p>Software developer Portfolio Template that help you showcae your work and your skills as software developer ⚡</p>
+                </div>
+                <div class="cardStats">
+                    <div class="leftStat">
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon1" name="radio-button-on"></ion-icon>
+                                <p>Javascript</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon2" name="git-network-outline"></ion-icon>
+                                <p>69</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon3" name="star"></ion-icon>
+                                <p>10</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rightStat">
+                        <p>12934 KB</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="laptop-outline"></ion-icon>
+                    <h4>awesome-web-components</h4>
+                </div>
+                <div class="cardDes">
+                    <p>Awesome web components and snippets for every Front-End Developer 🔥</p>
+                </div>
+                <div class="cardStats">
+                    <div class="leftStat">
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon1" name="radio-button-on"></ion-icon>
+                                <p>Javascript</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon2" name="git-network-outline"></ion-icon>
+                                <p>20</p>
+                            </span>
+                        </div>
+                        <div class="statText">
+                            <span>
+                                <ion-icon class="statIcon3" name="star"></ion-icon>
+                                <p>50</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="rightStat">
+                        <p>25064 KB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="openSourceButton">
+            <button class="downloadResume">
+                <p>MORE PROJECTS</p>
+                <div>
+                    <ion-icon name="open-outline"></ion-icon>
+                </div>
+            </button>
+        </div>
+        
+    </div>
+
+    <!-- bigProjects -->
+    <div class="bigProjects" id="projectId">
+        <div class="headingText">
+            <h3>Big Projects</h3>
+        </div>
+
+        <div class="cardDes">
+            <p>SOME REAL WORLD CONTRUBUTIONS WHEN I WORKED WITH STARTUPS AND COMPANIES</p>
+        </div>
+
+        <div class="projectImage">
+            <div class="img1">
+                <a href="">
+                    <img src="nextu.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="img2">
+                <a href="">
+                    <img src="saaya.jpg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- achievement -->
+    <div class="achievement" id="AchId">
+        <div class="headingText">
+            <h3>Achievements & Certifications 🏆</h3>
+        </div>
+        <div class="achivDes">
+            <p>ACHIEVEMENTS, CERTIFICATES, AWARD LETTERS AND SOME COOL STUFF THAT I'VE DONE!</p>
+        </div>
+        
+        <div class="certs">
+            <div class="certCard">
+                <div class="certImage">
+                    <img src="cert1.jpg" alt="certificate 1">
+                </div>
+                <div class="certHead">Google Assistant Action</div>
+                <div class="certDesc">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos. Repudiandae sunt doloremque rerum alias!
+                    </p>
+                </div>
+                <div class="certFoot">
+                    <div class="lfoot">
+                        <a href="">
+                            <p>Certification</p>
+                        </a>
+                    </div>
+                    <div class="rfoot">
+                        <a href="">
+                            <p>Award Letter</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="certCard">
+                <div class="certImage">
+                    <img src="cert2.jpg" alt="certificate 2">
+                </div>
+                <div class="certHead">Google Assistant Action</div>
+                <div class="certDesc">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos. Repudiandae sunt doloremque rerum alias!
+                    </p>
+                </div>
+                <div class="certFoot">
+                    <div class="lfoot">
+                        <a href="">
+                            <p>Certification</p>
+                        </a>
+                    </div>
+                    <div class="rfoot">
+                        <a href="">
+                            <p>Award Letter</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="certCard">
+                <div class="certImage">
+                    <img src="cert3.jpg" alt="certificate 3">
+                </div>
+                <div class="certHead">Google Assistant Action</div>
+                <div class="certDesc">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, eos. Repudiandae sunt doloremque rerum alias!
+                    </p>
+                </div>
+                <div class="certFoot">
+                    <div class="lfoot">
+                        <a href="">
+                            <p>Certification</p>
+                        </a>
+                    </div>
+                    <div class="rfoot">
+                        <a href="">
+                            <p>Final Project</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- blog -->
+    <div class="blog" id="blogId">
+        <div class="headingText">
+            <h3>Blogs</h3>
+        </div>
+        <div class="achivDes">
+            <p>
+                WITH LOVE FOR DEVELOPING COOL STUFF, I LOVE TO WRITE AND TEACH OTHERS WHAT I HAVE LEARNED
+            </p>
+        </div>
+        <div class="allCard">
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <a href="">
+                        <h4>
+                            Learn Python in 30 Days
+                        </h4>
+                    </a>
+                    
+                </div>
+                <div class="cardDes">
+                    <p>
+                        Discover how to master Python programming with our step-by-step guide. Perfect for beginners and professionals alike.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <a href="">
+                        <h4>
+                            Top 5 Tools for Web Development in 2025
+                        </h4>
+                    </a>
+                    
+                </div>
+                <div class="cardDes">
+                    <p>
+                        Explore the latest and greatest tools for modern web development to stay ahead in the tech world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- talks -->
+    <div class="talks" id="talkId">
+        <div class="headingText">
+            <h3>Talks</h3>
+        </div>
+        <div class="achivDes">
+            <p>
+                I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅
+            </p>
+        </div>
+        
+        <div class="certs">
+            <div class="certCard">
+                <div class="certImage">
+                    <img src="talk.jpg" alt="talk">
+                </div>
+                <div class="certDesc">
+                    <p>
+                        Workshop at TechFest 2025    
+                    </p>
+                </div>
+                <div class="certFoot">
+                    <button>
+                        Slides
+                    </button>
+                    <button>
+                        Event
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- tweets -->
+    <!-- <div class="tweets">
+    </div> -->
+
+    <!-- podcast -->
+    <div class="blog">
+        <div class="headingText">
+            <h3>Podcast</h3>
+        </div>
+        <div class="achivDes">
+            <p>
+                I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY    
+            </p>
+        </div>
+        <div class="allCard">
+            <div class="cardParent">
+                <div class="cardHead">
+                    <ion-icon name="play" id="pod_icon"></ion-icon>
+                    <a href="">
+                        <h4 id="pod_h4">
+                            TechTalk - "Building Startups in Bangalore, India"
+                        </h4>
+                    </a>
+                    
+                </div>
+                <div class="cardDes" id="pod_des">
+                    <p>
+                        Hosted by Innovators Podcast (TechTalks)
+                    </p>
+                </div>
+                              
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="blog" id="about">
+        <div class="aboutLeft">
+            <div class="headingText">
+                <h3>Podcast</h3>
+            </div>
+        
+            <div class="achivDes">
+                <p>
+                    DISCUSS A PROJECT OR JUST WANT TO SAY HI MY INBOX IS OPEN FOR ALL    
+                </p>
+            </div>
+
+            <div class="aboutContain">
+                
+                    <div class="cardHead" id="aboutHead">
+                        <h4>
+                            ICPC Regionalist 2023🎉 | 3🌟 @CodeChef | 1565 @LeetCode | 
+                            HTML | CSS | JS | TailwindCSS | 
+                            NodeJS | ReactJS | C | C++ | Java | Python | SQL | DSA | CP |
+                            Software Developer 💻 | Open Source Contributor 🔥 | Speaker 🎤                        </h4>
+                    </div>    
+                    <div class="aboutText">
+                        <h6>
+                            <ion-icon name="location-outline"></ion-icon>
+                            Kolkata, India
+                        </h6>
+                        <h6>
+                            Open for opportunities: Yes
+                        </h6>
+                    </div>          
+                    <div class="aboutProf">
+                        <!-- icons github, codechef, leetcode, gfg-->
+                        <ion-icon class="aboutIcon github" name="logo-github"></ion-icon>
+                        <ion-icon class="aboutIcon linkedin" name="logo-linkedin"></ion-icon>
+                        <ion-icon class="aboutIcon gitlab" name="logo-gitlab"></ion-icon>
+                    </div>
+            </div>
+        </div>
+        <div class="aboutRight">
+            <img src="aboutImg.png" alt="aboutImage">
+        </div>
+            
+    </div>
+
+    <footer class="footerBottom">
+        <p>Copyright &copy; 2024: Designed by <a href="#">RAJARSHI NATH</a></p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
