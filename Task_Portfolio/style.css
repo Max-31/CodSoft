@@ -488,6 +488,9 @@ progress[value]::-webkit-progress-bar {
 .aboutRight {
     box-shadow: 3px 3px 5px 3px var(--textColor2);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutContain {
@@ -546,6 +549,7 @@ footer a:hover {
 }
 
 /* ______________________________________________________ */
+/* scrollbar */
 ::-webkit-scrollbar {
     width: 15px;
 }
