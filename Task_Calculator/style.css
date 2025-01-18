@@ -93,15 +93,20 @@
 }
 
 .btn:hover{ 
+    cursor: pointer;
     background: var(--BtnHov);
     /* box-shadow: 1px 1px 2px 1px var(--textColor); */
 }
 
-/* .btn-icon{
-    background: var(--Btn);
-} */
 .btn-ce{
     font-size: 1.5rem;
+}
+
+#btn-icon-id{
+    background: var(--Btn);
+}
+.btn-ce:hover, #btn-icon-id:hover{
+    background: var(--BtnHov);
 }
 
 .btn-y{
