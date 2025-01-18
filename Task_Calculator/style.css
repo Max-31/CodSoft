@@ -1,0 +1,114 @@
+:root {
+    --textColor: white;
+    --textColor2: rgb(72, 231, 72);
+    --textColor3: darkgrey;
+    --lightShadow: rgb(197, 197, 197);
+
+    --bgColor: black;
+    --bgBtn: rgb(7, 161, 7);
+    --Btn: rgb(36, 36, 36);
+    --BtnHov: rgb(53, 53, 53);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    background: var(--bgColor);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entire{
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+
+    width: 400px;
+    height: 620px;
+
+    background: var(--bgColor);
+    border: var(--textColor3);
+    border-width: 10px;
+    box-shadow: 3px 3px 5px 3px var(--textColor3);
+}
+
+.entire:hover{
+    box-shadow: 3px 3px 5px 4px var(--lightShadow);
+}
+
+.displayDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayDiv input{
+    border: 1px solid var(--textColor3); 
+    border-radius: 15px;
+    padding: 5%;
+
+    width: 100%;
+    margin: 5%;
+    margin-bottom: 10%;
+
+    color: var(--textColor);
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.displayDiv input:focus{
+    border: 2px solid var(--textColor3);
+}
+
+.buttonDiv{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+.btn{
+    color: var(--textColor);
+
+    padding: 12%;
+    margin: 15%;
+    border: none;
+    border-radius: 50%;
+
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+
+    background: var(--Btn);
+    /* box-shadow: 1px 1px 2px 1px var(--textColor3); */
+}
+
+.btn:hover{ 
+    background: var(--BtnHov);
+    /* box-shadow: 1px 1px 2px 1px var(--textColor); */
+}
+
+/* .btn-icon{
+    background: var(--Btn);
+} */
+.btn-ce{
+    font-size: 1.5rem;
+}
+
+.btn-y{
+    color: var(--textColor2);
+}
+
+.btn-bg{
+    background: var(--bgBtn);
+    color: var(--textColor);
+}
